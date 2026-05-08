@@ -25,6 +25,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
 
+      - name: Inject Measurement ID
+        env:
+          GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
+        run: sed -i "s/__GA_MEASUREMENT_ID__/${GA_MEASUREMENT_ID}/g" docs/assets/javascript/consent.js
+
       - name: Zensical Action
         id: zensical
         uses: cssnr/zensical-action@v1
