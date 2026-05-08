@@ -1,20 +1,23 @@
 repos:
-  - repo: meta
-    hooks:
-      - id: check-hooks-apply
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-      - id: check-added-large-files
-      - id: check-case-conflict
-      - id: check-yaml
-        args: [--unsafe]
-      - id: detect-private-key
-      - id: end-of-file-fixer
-      - id: fix-byte-order-marker
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-symlinks
+      - id: check-added-large-files
+        args: [--maxkb=500]
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: pretty-format-json
+        args: [--autofix, --no-sort-keys]
 
   - repo: https://github.com/igorshubovych/markdownlint-cli
     rev: v0.48.0
@@ -32,6 +35,16 @@ repos:
         # language_version: "14.17.6"
         pass_filenames: true
         types: [file, markdown, non-executable]
+
+  - repo: local
+    hooks:
+      - id: prettier
+        name: prettier
+        language: node
+        entry: prettier --write
+        additional_dependencies:
+          - prettier@3.5.3
+        files: \.(css|scss|js)$
 
 # Specific part for https://pre-commit.ci
 ci:
