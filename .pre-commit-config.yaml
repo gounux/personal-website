@@ -52,7 +52,4 @@ ci:
   autofix_prs: true
   autoupdate_commit_msg: "[pre-commit.ci] Automatic updates of pre-commit hooks."
   autoupdate_schedule: monthly
-  skip: [
-      "check-hooks-apply",
-    ]
   submodules: false
