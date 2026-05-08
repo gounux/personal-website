@@ -10,4 +10,4 @@ icon: material/account-hard-hat-outline
 
 :speech_balloon: Blogging and doing some geostuff with [Geotribu](https://geotribu.fr/), a spontaneous group of french-speaking FOSS geo-enthusiasts.
 
-:classical_building: Volunteering as communication guy with [OSGeo-fr](https://www.osgeo.fr/), yearly organizing [the French-Speaking QGIS Users Meeting](https://conf.qgis.osgeo.fr/). 
+:classical_building: Volunteering as communication guy with [OSGeo-fr](https://www.osgeo.fr/), yearly organizing [the French-Speaking QGIS Users Meeting](https://conf.qgis.osgeo.fr/).
