@@ -1,0 +1,46 @@
+repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-yaml
+        args: [--unsafe]
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: fix-byte-order-marker
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.48.0
+    hooks:
+      - id: markdownlint
+        args:
+          [
+            "--config",
+            ".markdownlint.json",
+            "--ignore-path",
+            ".markdownlintignore",
+            "--fix",
+            "content",
+          ]
+        language: node
+        # language_version: "14.17.6"
+        pass_filenames: true
+        types: [file, markdown, non-executable]
+
+# Specific part for https://pre-commit.ci
+ci:
+  autofix_commit_msg: "[pre-commit.ci] Automatic fixes by pre-commit hooks."
+  autofix_prs: true
+  autoupdate_commit_msg: "[pre-commit.ci] Automatic updates of pre-commit hooks."
+  autoupdate_schedule: monthly
+  skip: [
+      "check-hooks-apply",
+    ]
+  submodules: false
