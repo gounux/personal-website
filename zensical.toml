@@ -17,7 +17,7 @@ site_name = "Guilhem Allaman"
 # meaningful description of the site content for use by search engines.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_description
-site_description = "Personal website of Guilhem Allaman."
+site_description = "Guilhem Allaman — GIS Software Engineer at OPENGIS.ch, contributor to QField and Geotribu, electronic music producer under the name Carterpape. Based in Paris."
 
 # The site_author attribute. This is used in the HTML head element.
 #
