@@ -59,7 +59,7 @@ nav = [
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-extra_css = ["assets/stylesheets/consent.css"]
+extra_css = []
 
 # With the `extra_javascript` option you can add your own JavaScript to your
 # project to customize the behavior according to your needs.
@@ -67,7 +67,7 @@ extra_css = ["assets/stylesheets/consent.css"]
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-extra_javascript = ["assets/javascript/consent.js"]
+extra_javascript = []
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -304,6 +304,3 @@ toggle.name = "Switch to light mode"
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
-
-# Analytics are loaded conditionally via assets/javascript/consent.js
-# after explicit user consent (GDPR compliance).
