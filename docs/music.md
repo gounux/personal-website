@@ -6,7 +6,7 @@ icon: material/music
 
 :notes: I played the classical cello for 12 years during my childhood. Still have the instrument at home, but it's gathering dust...
 
-:nerd_face: On my spare time, I like to do some DJing and compose some electronic music, under the `Carterpape` pseudonym. You can find some of my tracks [on Mirlo](https://mirlo.space/carterpape/releases).
+:nerd_face: On my spare time, I like to listen and make music, under the `Carterpape` pseudonym. You can find some of my tracks [on Mirlo](https://mirlo.space/carterpape/releases).
 
 <iframe
     src="https://mirlo.space/widget/trackGroup/6282?variant=card"
